@@ -1,4 +1,4 @@
-package me.marin1000.java8to11;
+package me.marin1000.java8to11.day1;
 
 @FunctionalInterface
 public interface RunSomething {
