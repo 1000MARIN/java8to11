@@ -1,6 +1,6 @@
 package me.marin1000.java8to11.day2;
 
-public interface GreetingInterface {
+public interface Foo {
     void printName();
 
 

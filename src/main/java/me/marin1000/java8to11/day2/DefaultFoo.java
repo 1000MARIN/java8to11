@@ -1,10 +1,10 @@
 package me.marin1000.java8to11.day2;
 
-public class DefaultGreeting implements GreetingInterface{
+public class DefaultFoo implements Foo {
 
     String name;
 
-    public DefaultGreeting(String name) {
+    public DefaultFoo(String name) {
         this.name = name;
     }
 
