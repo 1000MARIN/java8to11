@@ -7,25 +7,24 @@ import java.util.function.UnaryOperator;
 
 public class App {
     public static void main(String[] args) {
-        // 람다가 하는 일이 기존 메소드 또는 생성자를 호출하는 거라면, 메소드 레퍼런스를 사용해서
-        //매우 간결하게 표현할 수 있다.
+//        UnaryOperator<String> hi = (s) -> "hi " + s;
+        UnaryOperator<String> hi = Greeting::hi; // hi의 구현체를 Greeting 클래스의 static hi 메소드를 메소드 레퍼런스 하겠다. // :: - 메소드 레퍼런스
+        System.out.println(hi.apply("JIHO"));
+
         Greeting greeting = new Greeting();
-        UnaryOperator<String> hello = greeting::hello;
-        System.out.println(hello.apply("chuljin"));
+        UnaryOperator<String> hello = greeting::hello; // hi의 구현체를 Greeting 클래스 인스턴드의 hello 인스턴스 메소드를 메소드 레퍼런스 하겠다.
+        System.out.println(hello.apply("jiho"));
 
-        System.out.println("=================");
+        // 아무것도 없는 생성자
+        Supplier<Greeting> supplier = Greeting::new;
+        Greeting g = supplier.get();
 
-        Function<String, Greeting> chuljinGreeting = Greeting::new;
-        Greeting chuljin = chuljinGreeting.apply("chuljin");
-        System.out.println(chuljin.getName());
+        // 문자열을 받는 생성자
+        Function<String, Greeting> jihoGreeting = Greeting::new;
+        Greeting jiho = jihoGreeting.apply("jihoGreeting");
+        System.out.println(jiho.getName());
 
-        System.out.println("=================");
-
-        Supplier<Greeting> newGreeting = Greeting::new;
-
-        System.out.println("=================");
-
-        String[] names = {"chuljin", "son", "john"};
+        String[] names = {"Ajiho", "CJIHO", "Bjitoro"};
         Arrays.sort(names, String::compareToIgnoreCase);
         System.out.println(Arrays.toString(names));
     }
