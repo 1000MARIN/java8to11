@@ -1,12 +1,7 @@
-package me.marin1000.java8to11.day4;
+package me.marin1000.java8to11.class4;
 
-import java.time.Duration;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * [ Optional ]
