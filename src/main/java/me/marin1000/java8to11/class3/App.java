@@ -1,9 +1,8 @@
-package me.marin1000.java8to11.day3;
+package me.marin1000.java8to11.class3;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class App {
     public static void main(String[] args) {

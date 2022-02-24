@@ -1,4 +1,4 @@
-package me.marin1000.java8to11.day3;
+package me.marin1000.java8to11.class3;
 
 public class OnlineClass {
     private Integer id;
