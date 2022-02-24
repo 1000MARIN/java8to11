@@ -1,4 +1,4 @@
-package me.marin1000.java8to11.day1;
+package me.marin1000.java8to11.class1;
 
 import java.util.function.*;
 
