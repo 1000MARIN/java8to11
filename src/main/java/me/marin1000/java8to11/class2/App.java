@@ -1,4 +1,4 @@
-package me.marin1000.java8to11.day2;
+package me.marin1000.java8to11.class2;
 
 import java.util.ArrayList;
 import java.util.List;
