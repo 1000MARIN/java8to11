@@ -68,12 +68,12 @@ public class App6 {
 
             System.out.println("Hello " + Thread.currentThread().getName());
             return "Hello ";
-        }).handle((result, ex) -> {
-            if (ex != null) {
-                System.out.println(ex);
+        }).handle((r, e) -> {
+            if (e != null) {
+                System.out.println(e);
                 return "ERROR!";
             }
-            return result;
+            return r;
         });
     }
 
